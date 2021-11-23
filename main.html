@@ -145,29 +145,36 @@
     <div class="content">
       <header class="header js-header">
         <div class="wrapper">
-          <a href="/" class="header__logo">
-            <img src="../../images/logo.png" alt="logo" loading="lazy" width="129" height="131">
-          </a>
+
+          <div class="header__top">
+            <a href="/" class="header__logo">
+              <img src="../../images/logo.png" alt="logo" loading="lazy" width="129" height="131">
+            </a>
+
+            <a href="" class="button-add"><span></span>Добавить практику / решение</a>
+          </div>
           <div class="burger-menu js-burger-menu">
             <ul class="header__menu">
               <li class="header__menu-item">
                 <a href="" class="header__menu-link">О проекте</a>
               </li>
               <li class="header__menu-item">
-                <a href="" class="header__menu-link">Каталог практик</a>
+                <a href="" class="header__menu-link">Реестр лучших практик</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Деятельность</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Контакты</a>
               </li>
               <li class="header__menu-item">
                 <a href="" class="header__menu-link">Поиск</a>
               </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Контакты</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Контакты</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link button-add"><span></span>Добавить практику</a>
-              </li>
+              <!--
+				<li class="header__menu-item">
+					<a href="" class="header__menu-link button-add"><span></span>Добавить практику</a>
+				</li>-->
             </ul>
           </div>
           <button class=" btn burger-btn js-burger-btn" type="button"><span></span></button>
@@ -185,11 +192,14 @@
                     <source srcset="/images/main-slide-1.webp" type="image/webp">
                     <img src="/images/main-slide-1.jpg" alt="fvff">
                   </picture>
-                  <div class="main-slider-desc wrapper">
-                    <h1>Главный заголовок</h1>
-                    <p>Подзаголовок Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae
-                      deleniti eaque ipsa
-                      pariatur recusandae repellendus. Dolor, natus praesentium!</p>
+                  <div class="wrapper">
+                    <div class="main-slider-desc">
+                      <h1>Главный заголовок</h1>
+                      <p>Подзаголовок Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae
+                        deleniti eaque ipsa
+                        pariatur recusandae repellendus. Dolor, natus praesentium!</p>
+                      <button class="btn btn--primary">button</button>
+                    </div>
                   </div>
                 </div>
 
@@ -198,14 +208,42 @@
                     <source srcset="/images/main-slide-3.webp" type="image/webp">
                     <img src="/images/main-slide-3.jpg" alt="fvff">
                   </picture>
-                  <div class="main-slider-desc wrapper">
-                    <h1>Главный заголовок</h1>
-                    <p>Подзаголовок Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae
-                      deleniti eaque ipsa
-                      pariatur recusandae repellendus. Dolor, natus praesentium!</p>
+                  <div class="wrapper">
+                    <div class="main-slider-desc">
+                      <h1>Главный заголовок</h1>
+                      <p>Подзаголовок Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae
+                        deleniti eaque ipsa
+                        pariatur recusandae repellendus. Dolor, natus praesentium!</p>
+                      <button class="btn btn--primary">button</button>
+                    </div>
                   </div>
                 </div>
 
+                <!--<div class="swiper-slide main-swiper-slide js-swiper-slide">
+					<picture>
+						<source srcset="/images/main-slide-3.webp" type="image/webp">
+						<img src="/images/main-slide-3.jpg" alt="fvff">
+					</picture>
+				</div>
+				<div class="swiper-slide main-swiper-slide js-swiper-slide">
+					<picture>
+						<source srcset="/images/main-slide-4.webp" type="image/webp">
+						<img src="/images/main-slide-4.jpg" alt="fvff">
+					</picture>
+				</div>
+				<div class="swiper-slide main-swiper-slide js-swiper-slide">
+					<picture>
+						<source srcset="/images/main-slide-5.webp" type="image/webp">
+						<img src="/images/main-slide-5.jpg" alt="fvff">
+					</picture>
+				</div>
+				<div class="swiper-slide main-swiper-slide js-swiper-slide">
+					<picture>
+						<source srcset="/images/main-slide-6.webp" type="image/webp">
+						<img src="/images/main-slide-6.jpg" alt="fvff">
+					</picture>
+				</div>
+				-->
               </div>
 
             </div>
@@ -218,6 +256,56 @@
         </div>
 
         <div class="wrapper">
+          <section class="main-cards">
+            <div class="main-cards__item">
+              <picture>
+                <source srcset="/images/cards/card-1.webp" type="image/webp">
+                <img src="/images/cards/card-1.jpg" alt="fvff">
+              </picture>
+              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                </svg>
+              </i>
+              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
+              <div class="label">label</div>
+            </div>
+            <div class="main-cards__item">
+              <picture>
+                <source srcset="/images/cards/card-3.webp" type="image/webp">
+                <img src="/images/cards/card-3.jpg" alt="fvff">
+              </picture>
+              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                </svg>
+              </i>
+              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
+              <div class="label">label</div>
+            </div>
+            <div class="main-cards__item">
+              <picture>
+                <source srcset="/images/cards/card-4.webp" type="image/webp">
+                <img src="/images/cards/card-4.jpg" alt="fvff">
+              </picture>
+              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                </svg>
+              </i>
+              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
+              <div class="label">label</div>
+            </div>
+            <div class="main-cards__item">
+              <picture>
+                <source srcset="/images/cards/card-6.webp" type="image/webp">
+                <img src="/images/cards/card-6.jpg" alt="fvff">
+              </picture>
+              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                </svg>
+              </i>
+              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
+              <div class="label">label</div>
+            </div>
+          </section>
 
         </div>
       </main>
