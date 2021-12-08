@@ -154,6 +154,7 @@
             <a href="" class="button-add"><span></span>Добавить практику / решение</a>
           </div>
           <div class="burger-menu js-burger-menu">
+            <a href="" class="button-add"><span></span>Добавить практику / решение</a>
             <ul class="header__menu">
               <li class="header__menu-item">
                 <a href="" class="header__menu-link">О проекте</a>
@@ -168,15 +169,28 @@
               <li class="header__menu-item">
                 <a href="" class="header__menu-link">Контакты</a>
               </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Поиск</a>
-              </li>
-              <!--
-				<li class="header__menu-item">
-					<a href="" class="header__menu-link button-add"><span></span>Добавить практику</a>
-				</li>-->
             </ul>
           </div>
+          <form action="" class="search__form js-search__form">
+            <button type="button" title="" class="btn search__form-btn js-search-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.677 19.6076L12.962 13.8916C10.4196 15.6991 6.91642 15.257 4.90285 12.8746C2.88929 10.4921 3.03714 6.96422 5.24298 4.75863C7.44824 2.55208 10.9765 2.40359 13.3594 4.41705C15.7422 6.4305 16.1846 9.93408 14.377 12.4766L20.092 18.1926L18.678 19.6066L18.677 19.6076ZM9.48498 5.00062C7.58868 5.00019 5.95267 6.33131 5.56745 8.18807C5.18224 10.0448 6.15369 11.9169 7.89366 12.6709C9.63362 13.4248 11.6639 12.8535 12.7552 11.3027C13.8466 9.7519 13.699 7.64795 12.402 6.26463L13.007 6.86463L12.325 6.18463L12.313 6.17263C11.5648 5.41981 10.5464 4.99776 9.48498 5.00062Z" fill="#333333" />
+              </svg>
+              <span>поиск</span>
+            </button>
+            <div class="input-wrapper js-input-wrapper">
+              <input type="text" class="search__form-input js--search-input" autocomplete="off" placeholder="Начните вводить название" value="">
+              <button type="submit" title="" class="btn search__form-submit js-search-submit">найти</button>
+              <button type="button" title="" class="btn search__form-close js-search-close"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.59 5.5L12 11.09L6.41 5.5L5 6.91L10.59 12.5L5 18.09L6.41 19.5L12 13.91L17.59 19.5L19 18.09L13.41 12.5L19 6.91L17.59 5.5Z" fill="#333333" />
+                </svg>
+
+              </button>
+              <div class="search-result">
+
+              </div>
+            </div>
+
+          </form>
           <button class=" btn burger-btn js-burger-btn" type="button"><span></span></button>
         </div>
       </header>
@@ -189,6 +203,8 @@
                 <!-- Slides -->
                 <div class="swiper-slide main-swiper-slide left js-swiper-slide">
                   <picture>
+                    <source type="image/webp" srcset="images/main-slide-1-s.webp" media="(max-width: 520px)">
+                    <source type="image/jpg" srcset="images/main-slide-1-s.jpg" media="(max-width: 520px)">
                     <source srcset="images/main-slide-1.webp" type="image/webp">
                     <img src="images/main-slide-1.jpg" alt="fvff">
                   </picture>
@@ -197,7 +213,7 @@
                       <h1>Главный заголовок</h1>
                       <p>Подзаголовок Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae
                         deleniti eaque ipsa
-                        pariatur recusandae repellendus. Dolor, natus praesentium!</p>
+                        pariatur recusandae repellendus</p>
                       <button class="btn btn--primary">button</button>
                     </div>
                   </div>
@@ -205,6 +221,8 @@
 
                 <div class="swiper-slide main-swiper-slide right js-swiper-slide">
                   <picture>
+                    <source type="image/webp" srcset="images/main-slide-3-s.webp" media="(max-width: 520px)">
+                    <source type="image/jpg" srcset="images/main-slide-3-s.jpg" media="(max-width: 520px)">
                     <source srcset="images/main-slide-3.webp" type="image/webp">
                     <img src="images/main-slide-3.jpg" alt="fvff">
                   </picture>
@@ -257,69 +275,231 @@
 
         <div class="wrapper">
           <section class="main-cards">
-            <div class="main-cards__item">
-              <picture>
-                <source srcset="images/cards/card-1.webp" type="image/webp">
-                <img src="images/cards/card-1.jpg" alt="fvff">
-              </picture>
-              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
-                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
-                </svg>
-              </i>
-              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
-              <div class="label">label</div>
+            <div class="main-cards__wrapper">
+
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-1.webp" type="image/webp">
+                  <img src="images/cards/card-1.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-3.webp" type="image/webp">
+                  <img src="images/cards/card-3.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-4.webp" type="image/webp">
+                  <img src="images/cards/card-4.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-6.webp" type="image/webp">
+                  <img src="images/cards/card-6.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-4.webp" type="image/webp">
+                  <img src="images/cards/card-4.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-6.webp" type="image/webp">
+                  <img src="images/cards/card-6.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-3.webp" type="image/webp">
+                  <img src="images/cards/card-3.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+              <div class="main-cards__item js-main-cards__item">
+                <picture>
+                  <source srcset="images/cards/card-1.webp" type="image/webp">
+                  <img src="images/cards/card-1.jpg" alt="fvff">
+                </picture>
+                <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
+                    <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
+                  </svg>
+                </i>
+                <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Asperiores, odio?</a>
+                <div class="label">label</div>
+              </div>
+
             </div>
-            <div class="main-cards__item">
-              <picture>
-                <source srcset="images/cards/card-3.webp" type="image/webp">
-                <img src="images/cards/card-3.jpg" alt="fvff">
-              </picture>
-              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
-                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
-                </svg>
-              </i>
-              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
-              <div class="label">label</div>
-            </div>
-            <div class="main-cards__item">
-              <picture>
-                <source srcset="images/cards/card-4.webp" type="image/webp">
-                <img src="images/cards/card-4.jpg" alt="fvff">
-              </picture>
-              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
-                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
-                </svg>
-              </i>
-              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
-              <div class="label">label</div>
-            </div>
-            <div class="main-cards__item">
-              <picture>
-                <source srcset="images/cards/card-6.webp" type="image/webp">
-                <img src="images/cards/card-6.jpg" alt="fvff">
-              </picture>
-              <i><svg x="0px" y="0px" width="59.4px" height="74.8px" viewBox="0 0 59.4 74.8" xml:space="preserve">
-                  <path fill="white" d="M58.7,23.7L58.7,23.7l-0.1-0.1c0,0,0,0,0,0L35.9,0.8l0,0c-0.5-0.5-1.2-0.8-2-0.8H7.7C3.5,0,0,3.5,0,7.7v59.4 		c0,4.3,3.5,7.7,7.7,7.7h44c4.3,0,7.7-3.5,7.7-7.7V25.6C59.4,24.8,59.2,24.2,58.7,23.7z M52.7,67c0,0.6-0.5,1-1,1H6.8V49.4v-6.8V7.8 		c0-0.6,0.5-1,1-1h9h8.6V34h27.2l0.1,8.7V67z M32.2,27.2V6.6l20.5,20.6H32.2z"></path>
-                </svg>
-              </i>
-              <a href="" class="title"><span>Lorem ipsum dolor.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, odio?</a>
-              <div class="label">label</div>
-            </div>
+
+            <button class="btn-watch-more"><svg version="1.1" x="0px" y="0px" width="93px" height="90px" viewBox="0 0 93 90">
+                <rect x="1.5" fill="none" width="90" height="90"></rect>
+                <g>
+                  <path fill="currentColor" stroke="currentColor" d="M86.1,52.6l-5.3-1.1c-0.1,0-0.2,0-0.3,0.1c-0.1,0.1-0.2,0.2-0.2,0.3c-0.5,2.5-1.3,5-2.4,7.4c-0.1,0.3-0.3,0.6-0.4,0.9 		c-4,8.3-11.1,14.5-19.8,17.5c-3.7,1.3-7.5,1.9-11.3,1.9c-5.3,0-10.3-1.2-15.1-3.5C23.6,72.3,17.6,65.9,14.4,58l7.2,3.5 		c0.1,0.1,0.2,0.1,0.3,0c0.1,0,0.2-0.1,0.3-0.2l2.4-4.8c0.1-0.2,0-0.5-0.2-0.6L8.5,48.1c-0.2-0.1-0.5,0-0.6,0.2l-1.2,2.4l-5,10.1 		c0,0,0,0,0,0.1L0,64.3c-0.1,0.2,0,0.5,0.2,0.6l4.8,2.4c0.1,0.1,0.2,0.1,0.3,0s0.2-0.1,0.3-0.2l3.1-6.3c1.3,3.2,3,6.2,5.1,8.9 		c3.9,5.2,8.8,9.3,14.7,12.1c5,2.4,10.2,3.8,15.7,4.1c0.7,0,1.5,0.1,2.2,0.1c4.5,0,9-0.8,13.3-2.2c5-1.7,9.6-4.4,13.5-7.8 		c4.1-3.6,7.4-7.9,9.8-12.9c0.2-0.3,0.3-0.7,0.5-1c1.3-2.8,2.2-5.8,2.8-8.8C86.5,52.9,86.4,52.7,86.1,52.6z"></path>
+                  <path fill="currentColor" stroke="currentColor" d="M93,25.4c0-0.1-0.1-0.2-0.2-0.3l-4.8-2.4c-0.1-0.1-0.2-0.1-0.3,0s-0.2,0.1-0.3,0.2l-3.2,6.5c-1.7-4.1-4-7.9-7-11.2 		c-3.6-4.1-7.9-7.4-12.9-9.8c-5-2.4-10.2-3.8-15.7-4.1c-0.7,0-1.5-0.1-2.2-0.1c-4.5,0-9,0.8-13.3,2.2c-5,1.7-9.6,4.4-13.5,7.8 		c-4.1,3.6-7.4,7.9-9.8,12.9c-1.5,3.1-2.6,6.3-3.3,9.7c0,0.1,0,0.2,0.1,0.3s0.2,0.2,0.3,0.2l5.3,1.1c0.2,0,0.5-0.1,0.5-0.3 		c0.6-2.8,1.5-5.6,2.8-8.2c4-8.3,11.1-14.5,19.8-17.5c3.7-1.3,7.5-1.9,11.3-1.9c5.2,0,10.3,1.2,15.1,3.5c7.6,3.7,13.6,10,16.8,17.9 		l-7-3.4c-0.2-0.1-0.5,0-0.6,0.2l-2.3,4.9c-0.1,0.2,0,0.5,0.2,0.6l15.9,7.7c0.1,0,0.1,0,0.2,0c0.2,0,0.3-0.1,0.4-0.2L93,25.7 		C93,25.6,93,25.5,93,25.4z"></path>
+                </g>
+              </svg>
+              <span>Смотреть еще</span></button>
+
           </section>
 
         </div>
+        <section class="main-banner">
+          <picture>
+            <source srcset="images/banner.webp" type="image/webp">
+            <img src="images/banner.jpg" alt="fvff">
+          </picture>
+          <div class="main-banner__content">
+            <div class="wrapper">
+              <div class="item">
+                <div class="value">
+                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <path d="M46.6668 73.3334L66.6668 50V10.3704C66.6668 8.32489 64.9612 6.66669 62.8573 6.66669H17.143C15.0391 6.66669 13.3335 8.32489 13.3335 10.3704V69.6297C13.3335 71.6752 15.0391 73.3334 17.143 73.3334H46.6668ZM20.0002 13.3334H60.0002V46.6667H46.6668C44.5629 46.6667 43.3335 47.9545 43.3335 50V66.6667H20.0002V13.3334Z" fill="white"></path>
+                  </svg>
+
+                  <span class="js-value-1" data-value="550"></span>
+                </div>
+                <span class="desc">Всего <br> практик</span>
+              </div>
+              <div class="item">
+                <div class="value">
+                  <svg width="81" height="80" viewBox="0 0 81 80" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.001 9.99935V14.9993L50.3338 1.66601C51.6372 0.362581 54.0328 0.364939 55.3338 1.66601C56.6349 2.96709 56.6372 5.36258 55.3338 6.66602L42.001 19.9993H47.0011C48.8419 20.0017 50.3344 21.4942 50.3344 23.3327C50.3344 25.1759 48.8419 26.6684 47.0011 26.666H33.6677C31.8218 26.6707 30.3919 25.7671 30.3343 23.3327V9.99934C30.3014 8.16086 31.8245 6.69901 33.6677 6.66602C35.5062 6.63302 36.9657 8.15851 37.001 9.99935Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M66.3095 33.3327V28.3327L52.9768 41.666C51.6733 42.9694 49.2778 42.9671 47.9767 41.666C46.6756 40.3649 46.6733 37.9694 47.9768 36.666L61.3095 23.3327H56.3095C54.4687 23.3303 52.9762 21.8378 52.9762 19.9994C52.9762 18.1562 54.4687 16.6637 56.3095 16.666L69.6429 16.666C71.4888 16.6613 72.9187 17.565 72.9762 19.9994V33.3327C73.0092 35.1712 71.4861 36.633 69.6429 36.666C67.8044 36.699 66.3449 35.1735 66.3095 33.3327Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.3346 39.9994V46.666H47.0013C44.8974 46.666 43.668 47.9538 43.668 49.9994V66.666H20.3346V13.3327H27.0013L27.0013 6.66602H17.4775C15.3736 6.66602 13.668 8.32422 13.668 10.3697V69.629C13.668 71.6745 15.3736 73.3327 17.4775 73.3327H47.0013L67.0013 49.9994V39.9994H60.3346Z" fill="white"></path>
+                  </svg>
+
+                  <span class="js-value-2" data-value="223"></span>
+                </div>
+                <span class="desc">Практик<br> тиражируется</span>
+              </div>
+              <div class="item">
+                <div class="value">
+                  <svg width="81" height="80" viewBox="0 0 81 80" fill="none">
+                    <path d="M70.5 16.6667V11.6667L57.1667 25C55.8632 26.3034 53.4677 26.3011 52.1666 25C50.8655 23.6989 50.8632 21.3034 52.1666 20L65.5 6.66667H60.5C58.6591 6.66431 57.1666 5.17182 57.1666 3.33334C57.1666 1.49015 58.6591 -0.00233867 60.5 1.83909e-05H73.8333C75.6792 -0.00470256 77.1092 0.898941 77.1667 3.33334V16.6667C77.1997 18.5052 75.6765 19.967 73.8333 20C71.9948 20.033 70.5353 18.5075 70.5 16.6667Z" fill="white"></path>
+                    <path d="M60.5002 26.3318V50H47.1668C45.0629 50 43.8335 51.2878 43.8335 53.3333V70H20.5002V16.6667H51.3091L57.9758 10H17.643C15.5391 10 13.8335 11.6582 13.8335 13.7037V72.963C13.8335 75.0085 15.5391 76.6667 17.643 76.6667H47.1668L67.1668 53.3333V19.6651L60.5002 26.3318Z" fill="white"></path>
+                  </svg>
+
+                  <span class="js-value-3" data-value="812"></span>
+                </div>
+                <span class="desc">Количество<br> тиражирований</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="main-map wrapper" id="map">
+
+        </div>
+
       </main>
 
     </div>
     <footer class="footer">
       <div class="wrapper">
-        footer
+
+        <a href="/" class="footer__logo">
+          <img src="images/logo.png" alt="logo" loading="lazy" width="129" height="131">
+        </a>
+        <div class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link">О проекте</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link">Реестр лучших практик</a>
+            </li>
+
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link">Деятельность</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a class="footer__socials-link" href=""><svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.3259 29.3327C12.6835 29.3327 12.2541 29.3135 10.8327 29.2514C9.72422 29.215 8.63011 28.99 7.59745 28.586C5.81075 27.8917 4.39795 26.4804 3.70331 24.696C3.31435 23.6611 3.10456 22.5677 3.08292 21.4625C3 20.0461 3 19.5818 3 15.9727C3 12.3252 3.01925 11.8994 3.08292 10.4874C3.10503 9.38372 3.31482 8.29181 3.70331 7.25831C4.3972 5.47156 5.81229 4.05904 7.60189 3.36684C8.63634 2.9768 9.73011 2.76677 10.8356 2.74586C12.2497 2.66602 12.7146 2.66602 16.3259 2.66602C19.998 2.66602 20.42 2.68524 21.8192 2.74586C22.9276 2.76695 24.0242 2.97696 25.0618 3.36684C26.8509 4.05982 28.2657 5.47207 28.9604 7.25831C29.3559 8.30687 29.5668 9.41585 29.5837 10.5362C29.6667 11.9526 29.6667 12.4154 29.6667 16.023C29.6667 19.6306 29.6459 20.1037 29.5837 21.5039C29.5617 22.6101 29.3514 23.7046 28.9619 24.7404C28.2655 26.526 26.8505 27.9378 25.0618 28.6319C24.0257 29.0195 22.9313 29.229 21.8251 29.2514C20.4111 29.3327 19.9476 29.3327 16.3259 29.3327ZM16.2756 5.00652C12.6539 5.00652 12.2778 5.02426 10.8638 5.08784C10.0198 5.099 9.18394 5.25453 8.39256 5.54766C7.22395 5.99419 6.29924 6.9138 5.84731 8.07889C5.55149 8.87774 5.39572 9.7215 5.38682 10.5732C5.30835 12.0059 5.30835 12.3814 5.30835 15.9727C5.30835 19.5212 5.32167 19.9514 5.38682 21.3753C5.40008 22.2183 5.55576 23.0531 5.84731 23.8444C6.29991 25.0087 7.22446 25.9276 8.39256 26.3742C9.1834 26.6692 10.0196 26.8248 10.8638 26.834C12.2971 26.9168 12.6746 26.9168 16.2756 26.9168C19.9076 26.9168 20.2837 26.899 21.6859 26.834C22.5305 26.8237 23.367 26.6682 24.1586 26.3742C25.3201 25.9238 26.2388 25.0069 26.6905 23.8474C26.9858 23.0478 27.1415 22.2037 27.151 21.3516H27.1673C27.231 19.9381 27.231 19.5611 27.231 15.9491C27.231 12.337 27.2147 11.9571 27.151 10.5451C27.1377 9.70298 26.9821 8.86918 26.6905 8.07889C26.2399 6.91762 25.321 5.99904 24.1586 5.54766C23.3671 5.25305 22.5305 5.09748 21.6859 5.08784C20.2541 5.00652 19.8795 5.00652 16.2756 5.00652ZM16.3259 22.802C13.5571 22.8038 11.0598 21.1398 9.99887 18.586C8.9379 16.0321 9.52216 13.0916 11.4792 11.1357C13.4362 9.17979 16.3805 8.59382 18.9389 9.65106C21.4974 10.7083 23.166 13.2005 23.1666 15.9653C23.1625 19.7372 20.1032 22.7947 16.3259 22.802ZM16.3259 11.5268C13.8727 11.5268 11.884 13.5127 11.884 15.9624C11.884 18.4121 13.8727 20.398 16.3259 20.398C18.7792 20.398 20.7679 18.4121 20.7679 15.9624C20.7622 13.515 18.7768 11.5325 16.3259 11.5268ZM23.4331 10.4726C22.5527 10.4694 21.8412 9.75493 21.8429 8.87583C21.8445 7.99673 22.5586 7.28494 23.439 7.28494C24.3194 7.28494 25.0335 7.99672 25.0352 8.87582C25.0356 9.29995 24.8668 9.70678 24.5662 10.0064C24.2656 10.306 23.8578 10.4738 23.4331 10.4726Z" fill="#BFBFC1" />
+              </svg>
+            </a>
+            <a class="footer__socials-link" href=""><svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2962_10279)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4265 2.66602H12.2402C4.76899 2.66602 3 4.43501 3 11.9062V20.0925C3 27.5637 4.76899 29.3327 12.2402 29.3327H20.4265C27.8977 29.3327 29.6667 27.5637 29.6667 20.0925V11.9062C29.6667 4.43501 27.8789 2.66602 20.4265 2.66602ZM24.5291 21.6921H22.5907C21.8567 21.6921 21.6309 21.1087 20.3136 19.7726C19.1656 18.6623 18.6575 18.5117 18.3752 18.5117C17.98 18.5117 17.8671 18.6246 17.8671 19.1704V20.9205C17.8671 21.391 17.7165 21.6733 16.4745 21.6733C14.4232 21.6733 12.1461 20.4312 10.5465 18.1165C8.13761 14.7291 7.47895 12.1885 7.47895 11.6615C7.47895 11.3793 7.59186 11.1158 8.13761 11.1158H10.076C10.5653 11.1158 10.7535 11.3416 10.9417 11.8686C11.9014 14.635 13.5011 17.0626 14.1597 17.0626C14.4044 17.0626 14.5173 16.9497 14.5173 16.3287V13.4682C14.442 12.1508 13.7457 12.0379 13.7457 11.5674C13.7457 11.3416 13.9339 11.1158 14.235 11.1158H17.2837C17.6977 11.1158 17.8483 11.3416 17.8483 11.8309V15.6888C17.8483 16.1029 18.0365 16.2534 18.1494 16.2534C18.394 16.2534 18.601 16.1029 19.0527 15.6512C20.4453 14.0892 21.4427 11.6804 21.4427 11.6804C21.5745 11.3981 21.8003 11.1346 22.2896 11.1346H24.2279C24.8113 11.1346 24.9431 11.4357 24.8113 11.8497C24.5667 12.9789 22.1955 16.3287 22.1955 16.3287C21.9885 16.6674 21.9132 16.818 22.1955 17.1944C22.4025 17.4766 23.08 18.06 23.5316 18.587C24.3597 19.5279 24.9995 20.3183 25.1689 20.8641C25.3571 21.4098 25.0748 21.6921 24.5291 21.6921Z" fill="#BFBFC1" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2962_10279">
+                    <rect width="26.6667" height="26.6667" fill="white" transform="translate(3 2.66602)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__socials-link" href=""><svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 16.0034C3.00155 22.5626 7.7712 28.1474 14.2493 29.1754V19.8567H10.8667V16.0034H14.2533V13.07C14.1019 11.6801 14.5767 10.2948 15.5489 9.28995C16.521 8.28507 17.8898 7.76473 19.284 7.87004C20.2847 7.88621 21.2829 7.97533 22.2707 8.13671V11.4154H20.5853C20.0051 11.3394 19.4218 11.531 18.9997 11.9363C18.5776 12.3415 18.3624 12.9166 18.4147 13.4994V16.0034H22.1093L21.5187 19.858H18.4147V29.1754C25.4206 28.0682 30.3335 21.6698 29.594 14.6155C28.8546 7.5612 22.7217 2.32062 15.6384 2.69028C8.55515 3.05995 3.00113 8.91045 3 16.0034Z" fill="#BFBFC1" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
       </div>
     </footer>
 
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dcbd184-6d84-4e66-bcdf-f32128fc78f2&lang=ru_RU"></script>
   <script src="scripts/index.min.js"></script>
+  <script src="scripts/map.min.js"></script>
 
   <div class="counters" hidden></div>
 </body>
